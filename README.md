@@ -5,3 +5,4 @@
 ### Requisitos do projeto: [PDF](requisitos.pdf)
 
 
+> O Projeto está sob a Licença [MIT](LICENSE)
