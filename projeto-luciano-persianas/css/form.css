@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: aliceblue;
+  height: 100px;
+}
+
+h1, h3 {
+    color: darkblue;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px;
+    color: darkblue;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.logo-navbar {                        
+    width: 120px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    border-radius: 70px;
+}
+
+.cadastro-logar {
+    text-align: center;
+    margin: 40px auto;
+    font-weight: bold;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    color: darkblue;
+}
+
+a:hover{
+    color: blue;
+}
+
+.logo {                         
+    width: 300px;
+    border-radius: 150px;
+    margin-left: 100px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    gap: 5px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+fieldset label, legend {
+    font-weight: bold;
+    font-style: italic;
+}
+
+fieldset input, textarea{
+    padding: 5px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    max-height: max-content;
+}
+
+fieldset button {
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+fieldset button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+}
