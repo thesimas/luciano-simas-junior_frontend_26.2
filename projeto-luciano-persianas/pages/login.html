@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luciano Persianas - Loja Virtual</title>
+    <title>Luciano Persianas - Login</title>
     <link rel="shortcut icon" href="projeto-luciano-persianas/assets/images/logoFavIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="projeto-luciano-persianas/css/base.css">
+    <link rel="stylesheet" href="../css/form.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <nav class="navbar">
+            <img src="../assets/images/logo.png" alt="Logo empresa Luciano Persianas" class="logo-navbar">
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../pages/cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo-principal">
+    <section>
+        <article>
+            <form action="" method="post">
+                <fieldset>
+                        <legend>Formulário de Login</legend>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email"required placeholder="usuario@email.com" required>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" required placeholder="*******">
+                        <button type="submit">Logar</button>
+                    </fieldset>
+            </form>
+            <div class="cadastro-logar">
+                <p>Não possui cadastro?</p>
+                <a href="../pages/cadastro.html">Se cadastre aqui!</a>
+            </div>
+        </article>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Loja Virtual Luciano Persianas - Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://github.com/thesimas" target="_blank">Luciano Simas Junior</a></p>
+    </footer>
 </body>
 </html>
