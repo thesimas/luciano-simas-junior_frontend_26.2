@@ -149,23 +149,15 @@ a:hover{
     font-weight: bold;
 }
 
-.form-contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(247, 249, 250);
-    box-shadow: 1px 1px 5px 1px darkblue;
-    border-radius: 20px;
-    gap: 10px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 fieldset {
     display: flex;
     flex-direction: column;
-    border: none;
-    gap: 5px;
+    background-color: rgb(247, 249, 250);
+    box-shadow: 1px 1px 5px 1px darkblue;
+    gap: 8px;
+    margin: auto;
+    border-radius: 20px;
 }
 
 fieldset label, legend {
@@ -173,6 +165,15 @@ fieldset label, legend {
     color: #333;
     font-size: 15px;
     font-style: italic;
+}
+
+legend {
+    text-align: center;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: white;
+    padding: 4px;
+    font-weight: bold;
 }
 
 fieldset input, textarea{
