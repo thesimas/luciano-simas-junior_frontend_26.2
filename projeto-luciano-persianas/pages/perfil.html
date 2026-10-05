@@ -3,13 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luciano Persianas - Loja Virtual</title>
+    <title>Luciano Persianas - Perfil</title>
     <link rel="shortcut icon" href="projeto-luciano-persianas/assets/images/logoFavIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="projeto-luciano-persianas/css/base.css">
+    <link rel="stylesheet" href="../css/form.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <nav class="navbar">
+            <img src="../assets/images/logo.png" alt="Logo empresa Luciano Persianas" class="logo-navbar">
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../pages/loja.html">Loja</a></li>
+                <li><a href="../../index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="perfil-grid">
+        <article>
+            <h2>Meu Perfil</h2>
+            <form action="" method="post">
+                <fieldset>
+                        <div class="espaco-foto">
+                            <img src="../assets/images/foto-perfil.png" alt="Foto Genérica de Perfil" class="foto-perfil">
+                        </div>
+                        <label for="id">ID:</label>
+                        <input type="text" name="id" id="id" placeholder="C001" disabled>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required placeholder="">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email"required placeholder="usuario@email.com" required>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" required minlength="11" maxlength="11" placeholder="Digite seu CPF sem pontuação">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" required placeholder="*******">
+                        <br>
+                        <button type="submit">Atualizar Dados</button>
+                    </fieldset>
+            </form>
+        </article>
+        <article>
+            <h2>Meus Pedidos</h2>
+            <table class="tabela-pedidos">
+            <thead>
+                <tr>
+                    <th>Pedido</th>
+                    <th>Produto</th>
+                    <th>Características</th>
+                    <th>Medida/Qtd</th>
+                    <th>Valor Total</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>#1024</strong></td>
+                    <td>Persiana Motorizada</td>
+                    <td>Acionamento por controle remoto ou assistente virtual</td>
+                    <td>2 m²</td>
+                    <td>R$ 1.700,00</td>
+                    <td><span>Em transporte</span></td>
+                </tr>
+                <tr>
+                    <td><strong>#1025</strong></td>
+                    <td>Cortina Rolô Tela Solar</td>
+                    <td>Proteção UV eficiente mantendo a visibilidade externa</td>
+                    <td>3 m²</td>
+                    <td>R$ 660,00</td>
+                    <td><span>Em Produção</span></td>
+                </tr>
+                <tr>
+                    <td><strong>#1026</strong></td>
+                    <td>Persiana Double Vision</td>
+                    <td>Combina tecidos translúcidos e opacos</td>
+                    <td>1,5 m²</td>
+                    <td>R$ 435,00</td>
+                    <td><span>Aguardando Pagamento</span></td>
+                </tr>
+                <tr>
+                    <td><strong>#1027</strong></td>
+                    <td>Caixa Box</td>
+                    <td>Acabamento com guias laterais feitas em alumínio</td>
+                    <td>2 unid.</td>
+                    <td>R$ 700,00</td>
+                    <td><span>Entregue</span></td>
+                </tr>
+            </tbody>
+        </table>
+        </article>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Loja Virtual Luciano Persianas - Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://github.com/thesimas" target="_blank">Luciano Simas Junior</a></p>
+    </footer>
 </body>
 </html>

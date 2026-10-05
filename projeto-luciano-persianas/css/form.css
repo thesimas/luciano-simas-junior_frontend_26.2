@@ -27,7 +27,7 @@ h1, h3 {
 
 h2 {
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     color: darkblue;
 }
 
@@ -121,4 +121,37 @@ footer p a {
     text-decoration: none;
     font-weight: bold;
     color: darkblue;
+}
+
+.espaco-foto {
+    margin: 5px auto;
+}
+
+.foto-perfil {
+    width: 100px;
+}
+
+.perfil-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+    margin: 2rem auto;
+    padding: 15px;
+}
+
+.tabela-pedidos {
+    margin: 50px auto;
+    padding: 15px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    width: 100%;
+}
+
+.tabela-pedidos th, td {
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: left;
+    border-bottom: 5px solid #0857e0;
 }
