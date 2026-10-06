@@ -8,6 +8,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    flex: 1;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,9 +21,6 @@ body {
   height: 100px;
 }
 
-.conteudo-principal {
-    flex: 1;
-}
 
 h1, h3 {
     color: darkblue;
@@ -43,13 +44,6 @@ h2 {
     border-radius: 70px;
 }
 
-.cadastro-logar {
-    text-align: center;
-    margin: 40px auto;
-    font-weight: bold;
-    padding: 2px;
-}
-
 a {
     text-decoration: none;
     font-size: larger;
@@ -71,8 +65,8 @@ fieldset {
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 5px 1px darkblue;
-    gap: 5px;
-    margin: 50px auto;
+    gap: 3px;
+    margin: 30px auto;
     width: 50%;
     border-radius: 10px;
 }
@@ -154,4 +148,21 @@ footer p a {
     background-color: aliceblue;
     text-align: left;
     border-bottom: 5px solid #0857e0;
+}
+
+.login {
+    margin: auto;
+    width: 50%;
+}
+
+.cadastro {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.cadastro-logar {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    width: 50%;
 }
