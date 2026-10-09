@@ -6,6 +6,8 @@
     <title>Luciano Persianas - Relatório</title>
     <link rel="shortcut icon" href="../assets/images/logoFavIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/relatorio.css">
 </head>
 <body>
     <header>
@@ -13,17 +15,26 @@
             <h1>Área Administrativa</h1>
             <ul class="nav-links">
                 <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="loja.html">Loja</a></li>
-                <li><a href="relatorio.html">Relatório</a></li>
+                <li><a href="login.html">Sair</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <table>
+            <h2>Relatório de Clientes</h2>
+            <div class="filtro">
+                <img src="../assets/images/lupa.png" alt="Imagem de uma lupa" class="logo-lupa">
+                <label for="seletor">Selecione um método de busca: </label>
+                <select name="seletor" id="seletor">
+                    <option value="id">ID</option>
+                    <option value="cpf">CPF</option>
+                    <option value="nome">Nome</option>
+                    <option value="email">Email</option>
+                </select>
+                <input type="text" required>
+                <button>Pesquisar</button>
+            </div>
+            <table class="tabela-clientes">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -62,6 +73,49 @@
                         <td>Pedro Galego</td>
                         <td>000.000.000-00</td>
                         <td>pedro@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="area-relatorio">
+            <h2>Relatório de Vendas</h2>
+            <div class="filtro">
+                <img src="../assets/images/lupa.png" alt="Imagem de uma lupa" class="logo-lupa">
+                <label for="seletor">Selecione um método de busca: </label>
+                <select name="seletor" id="seletor">
+                    <option value="id">ID</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="data">Data</option>
+                    <option value="Valor">Valor</option>
+                    <option value="Valor">Produto</option>
+                </select>
+                <input type="text" required>
+                <button>Pesquisar</button>
+            </div>
+            <table id="tabela-vendas">
+                <thead>
+                    <tr>
+                        <th>ID da Venda</th>
+                        <th>Cliente</th>
+                        <th>Produto</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    <tr>
+                        <td>#1025</td>
+                        <td>Maria Silva</td>
+                        <td>Cortina Rolô Tela Solar</td>
+                        <td>08/10/2026</td>
+                        <td>Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>#1026</td>
+                        <td>João Pedro</td>
+                        <td>Persiana Vertical</td>
+                        <td>09/10/2026</td>
+                        <td>Pendente</td>
                     </tr>
                 </tbody>
             </table>

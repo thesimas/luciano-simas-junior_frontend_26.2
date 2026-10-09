@@ -1,0 +1,52 @@
+
+.logo-lupa {
+    width: 50px;
+    border-radius: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 1px auto;
+    padding: 10px;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.filtro label {
+    margin: auto;
+}
+
+.filtro select, button, input {
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+table {
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    width: 90%;
+}
+
+table th{
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: left;
+    border-bottom: 5px solid #0857e0;
+}
