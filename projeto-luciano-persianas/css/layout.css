@@ -1,10 +1,12 @@
+@import url('base.css');
+
 /* Estilização do Navbar e footer */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: aliceblue;
+  background-color: var(--cor-navbar-footer);
   height: 100px;
 }
 
@@ -16,19 +18,18 @@
 
 .logo-navbar {                        
     width: 120px;
-    box-shadow: 1px 1px 5px 1px darkblue;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
     border-radius: 70px;
 }
 
 footer {
     text-align: center;
-    background-color: aliceblue;
+    background-color: var(--cor-navbar-footer);
 }
 
-footer p a {
+footer p, footer a {
     text-decoration: none;
-    font-weight: bold;
-    color: darkblue;
+    color: var(--cor-texto-secundario);
 }
 
 /* Estilização do MAIN de RELATORIO.html */

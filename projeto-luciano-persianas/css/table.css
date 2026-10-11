@@ -1,14 +1,17 @@
+@import url('base.css');
+
 table {
     padding: 15px;
-    border: 1px solid darkblue;
+    border: 1px solid var(--cor-borda-tabela);
     border-radius: 10px;
     width: 75%;
+    background-color: var(--cor-fundo-tabela);
 }
 
-table th, td {
-    background-color: whitesmoke;
+table th, table td {
+    background-color: var(--cor-td-tabela);
     text-align: left;
-    border-bottom: 10px solid #0857e0;
+    border-bottom: 5px solid var(--cor-bord-bottom);
     padding: 10px;
 }
 
@@ -25,17 +28,15 @@ tfoot td {
 /* Estilização da Tabela Pedidos no perfil */
 .table-perfil {
     padding: 10px;
-    border: 1px solid darkblue;
+    border: 1px solid var(--cor-borda-input);
     border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px darkblue;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
     width: 90%;
 }
 
 .table-perfil th, .table-perfil td {
     padding: 8px;
-    background-color: aliceblue;
     text-align: left;
-    border-bottom: 5px solid #0857e0;
 }
 
 /* Estilização da tabela RELATORIOS */
@@ -46,8 +47,12 @@ tfoot td {
 
 .tabela-relatorio th{
     padding: 10px;
-    background-color: aliceblue;
+    background-color: var(--cor-td-tabela);
     border-radius: 50px;
     text-align: center;
     border-bottom: none;
+}
+
+.tabela-relatorio td {
+    background-color: var(--cor-fundo-linha-alternada);
 }

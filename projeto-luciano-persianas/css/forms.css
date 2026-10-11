@@ -1,9 +1,10 @@
-/* Estilização de Formulario */
+@import url('base.css');
 
+/* Estilização de Formulario */
 fieldset {
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 1px 5px 1px darkblue;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
     gap: 3px;
     margin: 30px auto;
     width: 50%;
@@ -12,7 +13,7 @@ fieldset {
 
 legend {
     text-align: center;
-    background-color: darkblue;
+    background-color: var(--cor-destaque-quente);
     border-radius: 5px;
     color: white;
     padding: 5px;
@@ -25,8 +26,9 @@ fieldset label, legend {
 }
 
 fieldset input, textarea{
+    text-align: left;
     padding: 5px;
-    border: 2px solid darkblue;
+    border: 2px solid var(--cor-borda-form);
     border-radius: 5px;
     max-height: max-content;
 }
@@ -34,33 +36,15 @@ fieldset input, textarea{
 fieldset button {
     padding: 10px;
     border: none;
-    background-color: green;
-    color: white;
+    background-color: var(--cor-btn-sucesso);
+    color: var(--cor-texto-claro);
     cursor: pointer;
     font-weight: bolder;
     border-radius: 10px;
 }
 
 fieldset button:hover {
-    background-color: darkgreen;
-}
-
-
-/* Estilização da Tabela Pedidos no perfil */
-
-table {
-    padding: 10px;
-    border: 1px solid darkblue;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px darkblue;
-    width: 90%;
-}
-
-table th, td {
-    padding: 8px;
-    background-color: aliceblue;
-    text-align: left;
-    border-bottom: 5px solid #0857e0;
+    background-color: var(--cor-btn-sucesso-hover);
 }
 
 /* Estilização das Mensagens abaixo do forms de cadastro e login*/
@@ -91,7 +75,7 @@ table th, td {
 
 /* Estilização do FORMS no index */
 .form-contato {
-    box-shadow: 1px 1px 5px 1px darkblue;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
     gap: 5px;
     margin:  0 auto;
     border-radius: 20px;

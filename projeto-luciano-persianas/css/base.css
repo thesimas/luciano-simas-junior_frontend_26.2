@@ -1,33 +1,89 @@
+:root {
+    /* Cores da identidade visual */
+    --cor-primaria: #212B4D;             
+    --cor-secundaria: #52658F;            
+    --cor-fundo-suave: #F2F6FC;           
+    --cor-destaque-quente: #D8C2A8;       
+    --cor-destaque-quente-hover: #C5AA89;
+
+    /* Fundos de página e componentes */
+    --cor-fundo-pagina: #FFFFFF;
+    --cor-fundo-tabela: #F5F7FB;
+    --cor-fundo-cartao: #FAFBFD;
+    --cor-fundo-destaque: #EAF0F8;
+    --cor-navbar-footer: #EFF3F9;
+    --cor-fundo-linha-alternada: #f0ecec;
+
+    /* Cores de textos */
+    --cor-texto-escuro: #303545;          
+    --cor-texto-destaque: var(--cor-primaria);
+    --cor-texto-secundario: #697386;
+    --cor-texto-claro: #FFFFFF;
+
+    /* Bordas, divisórias e sombras */
+    --cor-borda-card: #DFE6F0;
+    --cor-borda-tabela: #D8E1EE;
+    --cor-bord-bottom: #E6EBF3;
+    --cor-borda-form: #C7D1E0;
+    --cor-borda-input: #B8C6DA;
+    --cor-borda-input-erro: #BE6670;
+    --cor-box-shaddow: rgba(33, 43, 77, 0.10);
+
+    /* Botões e ações positivas */
+    --cor-btn-sucesso: #4E806B;
+    --cor-btn-sucesso-hover: #3D6856;
+
+    /* Botões e ações destrutivas */
+    --cor-btn-excluir: #B45E68;
+    --cor-btn-excluir-hover: #984650;
+
+    /* Botões dos cards e ações principais */
+    --cor-card-btn: var(--cor-primaria);
+    --cor-card-btn-hover: #17213E;
+
+    /* Links */
+    --cor-link: #46689A;
+    --cor-link-hover: #2E4E7C;
+
+    /* Células e elementos de tabelas */
+    --cor-td-tabela: #FBFCFE;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: var(--cor-fundo-pagina);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: var(--cor-texto-escuro);
 }
 
 main {
     flex: 1;
 }
 
-h1, h3 {
-    color: darkblue;
+h1, h2, h3 {
+    color: var(--cor-primaria);
 }
 
 h2 {
     text-align: center;
     padding: 15px;
-    color: darkblue;
 }
 
 a {
     text-decoration: none;
     font-size: larger;
-    color: darkblue;
+    color: var(--cor-link);
 }
 
-a:hover{
-    color: blue;
+a:hover {
+    color: var(--cor-link-hover);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--cor-secundaria);
+    outline-offset: 3px;
 }

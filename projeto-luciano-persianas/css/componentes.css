@@ -1,3 +1,5 @@
+@import url('base.css');
+
 /* ------------------ Vai reunir todas as classes aleatoria dos html's ------------------ */
 
 /* Estilização do SOBRE no index */
@@ -14,16 +16,16 @@
     width: 300px;
     border-radius: 150px;
     margin-left: 100px;
-    box-shadow: 1px 1px 5px 1px darkblue;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
 }
 
 .texto-descricao {
     font-size: large;
     margin: auto;
     padding: 15px;
-    background-color: rgb(247, 249, 250);
+    background-color: var(--cor-fundo-destaque);
     border-radius: 50px;
-    box-shadow: 1px 1px 5px 1px darkblue;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
 }
 
 /* Estilização da seção de contato do index  */
@@ -41,20 +43,21 @@
     font-size: medium;
     padding: 37px;
     background-color: rgb(247, 249, 250);
-    box-shadow: 1px 1px 5px 1px darkblue;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
     border-radius: 20px;
 }
 
 .info-contato-destaque{
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: large;
     margin-top: 45px;
-    color: darkblue;
+    color: var(--cor-texto-destaque);
 }
 
 .info-contato span {
     font-weight: bold;
+    color: var(--cor-texto-destaque);
 }
 
 /* Estilização do Perfil - Formulario de Edição do perfil */
@@ -103,27 +106,35 @@
     cursor: pointer;
     width: 100%;
     padding: 10px;
-    background-color: green;
-    color: white;
+    background-color: var(--cor-btn-sucesso);
+    color: var(--cor-texto-claro);
     font-weight: bolder;
     font-size: large;
 }
 
+.btn-compra:hover {
+    background-color: var(--cor-btn-sucesso-hover);
+}
+
 .btn-remover {
     cursor: pointer;
-    background-color: red;
-    color: white;
+    background-color: var(--cor-btn-excluir);
+    color: var(--cor-texto-claro);
     border: none;
-    padding: 5px;
+    padding: 10px;
     font-weight: bolder;
     font-size: small;
+}
+
+.btn-remover-hover {
+    background-color: var(--cor-btn-excluir-hover);
 }
 
 /* Estilização do Filtro RELATORIO*/
 .filtro {
     display: flex;
-    background-color: aliceblue;
-    box-shadow: 1px 1px 5px 1px darkblue;
+    background-color: var(--cor-fundo-destaque);
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
     border-radius: 15px;
     justify-content: space-between;
     width: 90%;

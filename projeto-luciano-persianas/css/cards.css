@@ -1,5 +1,6 @@
-/* Estilização dos Cards */
+@import url('base.css');
 
+/* Estilização dos Cards */
 .galeria-produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -10,7 +11,8 @@
 }
 
 .cartao-produto {
-    border: 1px solid darkblue;
+    border: 1px solid var(--cor-borda-card);
+    background-color: var(--cor-fundo-cartao);
     border-radius: 5px;
     text-align: center;
     padding: 5px;
@@ -28,8 +30,9 @@
 }
 
 .cartao-produto button {
-    background-color: blue;
-    color: white;
+    background-color: var(--cor-card-btn);
+    color: var(--cor-texto-claro);
+    font-size: medium;
     border: none;
     padding: 15px;
     border-radius: 4px;
@@ -38,5 +41,5 @@
 }
 
 .cartao-produto button:hover {
-    background-color: darkblue;
+    background-color: var(--cor-card-btn-hover);
 }
