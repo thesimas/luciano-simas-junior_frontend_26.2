@@ -21,11 +21,21 @@
 
 .texto-descricao {
     font-size: large;
-    margin: auto;
+    margin: 1rem auto;
     padding: 15px;
     background-color: var(--cor-fundo-destaque);
     border-radius: 50px;
     box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
+}
+
+.texto-descricao p{
+    letter-spacing: 0.7px;
+}
+
+.texto-descricao p em {
+    text-decoration: double;
+    font-weight: bold;
+    color: var(--cor-texto-destaque);
 }
 
 /* Estilização da seção de contato do index  */
