@@ -1,0 +1,158 @@
+/* ------------------ Vai reunir todas as classes aleatoria dos html's ------------------ */
+
+/* Estilização do SOBRE no index */
+.secao-descricao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.logo {                         
+    width: 300px;
+    border-radius: 150px;
+    margin-left: 100px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+}
+
+.texto-descricao {
+    font-size: large;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(247, 249, 250);
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+}
+
+/* Estilização da seção de contato do index  */
+.secao-contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.info-contato {
+    margin: auto;
+    font-size: medium;
+    padding: 37px;
+    background-color: rgb(247, 249, 250);
+    box-shadow: 1px 1px 5px 1px darkblue;
+    border-radius: 20px;
+}
+
+.info-contato-destaque{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 45px;
+    color: darkblue;
+}
+
+.info-contato span {
+    font-weight: bold;
+}
+
+/* Estilização do Perfil - Formulario de Edição do perfil */
+.espaco-foto {
+    margin: 5px auto;
+}
+
+.foto-perfil {
+    width: 100px;
+}
+
+.perfil-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+}
+
+/* Formatação do Layout do conteudo principal de LOJA - produtos e carrinhos*/
+
+.coluna-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Ajuste no Card do Produto de LOJA */
+.cartao-produto {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.img-produto {
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+}
+
+/* Ajuste na tabela de LOJA - celula e botão*/
+.valor-total {
+    font-weight: bold;
+    font-size: small;
+}
+
+.btn-compra {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.btn-remover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+/* Estilização do Filtro RELATORIO*/
+.filtro {
+    display: flex;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    border-radius: 15px;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.logo-lupa {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.filtro label {
+    margin: auto;
+}
+
+.filtro select, button, input {
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-pesquisar {
+    background-color: green;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-pesquisar:hover{
+    background-color: darkgreen;
+}

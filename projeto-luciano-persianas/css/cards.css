@@ -1,0 +1,42 @@
+/* Estilização dos Cards */
+
+.galeria-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.cartao-produto {
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-produto {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    height: 200px;
+}
+
+.cartao-produto button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cartao-produto button:hover {
+    background-color: darkblue;
+}

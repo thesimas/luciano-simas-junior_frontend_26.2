@@ -1,0 +1,53 @@
+table {
+    padding: 15px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    width: 75%;
+}
+
+table th, td {
+    background-color: whitesmoke;
+    text-align: left;
+    border-bottom: 10px solid #0857e0;
+    padding: 10px;
+}
+
+table td img {
+    width: 70px;
+}
+
+tfoot td {
+    border-bottom: none;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Estilização da Tabela Pedidos no perfil */
+.table-perfil {
+    padding: 10px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    width: 90%;
+}
+
+.table-perfil th, .table-perfil td {
+    padding: 8px;
+    background-color: aliceblue;
+    text-align: left;
+    border-bottom: 5px solid #0857e0;
+}
+
+/* Estilização da tabela RELATORIOS */
+.tabela-relatorio {
+    margin: 10px auto;
+    width: 90%;
+}
+
+.tabela-relatorio th{
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    text-align: center;
+    border-bottom: none;
+}

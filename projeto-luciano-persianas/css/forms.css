@@ -1,0 +1,99 @@
+/* Estilização de Formulario */
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    gap: 3px;
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+    background-color: darkblue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+fieldset label, legend {
+    font-weight: bold;
+    font-style: italic;
+}
+
+fieldset input, textarea{
+    padding: 5px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    max-height: max-content;
+}
+
+fieldset button {
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+fieldset button:hover {
+    background-color: darkgreen;
+}
+
+
+/* Estilização da Tabela Pedidos no perfil */
+
+table {
+    padding: 10px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px darkblue;
+    width: 90%;
+}
+
+table th, td {
+    padding: 8px;
+    background-color: aliceblue;
+    text-align: left;
+    border-bottom: 5px solid #0857e0;
+}
+
+/* Estilização das Mensagens abaixo do forms de cadastro e login*/
+
+.login {
+    margin: auto;
+    width: 50%;
+}
+
+.cadastro {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.cadastro-logar {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    width: 50%;
+}
+
+/* Ajuste na altura do form do login */
+
+.form-login {
+    margin-top: 100px;
+}
+
+
+/* Estilização do FORMS no index */
+.form-contato {
+    box-shadow: 1px 1px 5px 1px darkblue;
+    gap: 5px;
+    margin:  0 auto;
+    border-radius: 20px;
+    width: 90%;
+}
