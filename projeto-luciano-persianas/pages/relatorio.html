@@ -28,15 +28,15 @@
             <h2>Relatório de Clientes</h2>
             <div class="filtro">
                 <img src="../assets/images/lupa.png" alt="Imagem de uma lupa" class="logo-lupa">
-                <label for="seletor">Selecione um método de busca: </label>
-                <select name="seletor" id="seletor">
+                <label for="seletor-cliente">Selecione um método de busca: </label>
+                <select id="seletor-cliente">
                     <option value="id">ID</option>
                     <option value="cpf">CPF</option>
                     <option value="nome">Nome</option>
                     <option value="email">Email</option>
                 </select>
                 <input type="text" required>
-                <button class="btn-pesquisar" id="btn-pesquisar">Pesquisar</button>
+                <button class="btn-pesquisar" id="btn-pesquisar-clientes">Pesquisar</button>
             </div>
             <table class="tabela-relatorio">
                 <thead>
@@ -85,8 +85,8 @@
             <h2>Relatório de Vendas</h2>
             <div class="filtro">
                 <img src="../assets/images/lupa.png" alt="Imagem de uma lupa" class="logo-lupa">
-                <label for="seletor">Selecione um método de busca: </label>
-                <select name="seletor" id="seletor">
+                <label for="seletor-vendas">Selecione um método de busca: </label>
+                <select id="seletor-vendas">
                     <option value="id">ID</option>
                     <option value="cliente">Cliente</option>
                     <option value="data">Data</option>
@@ -94,7 +94,7 @@
                     <option value="Valor">Produto</option>
                 </select>
                 <input type="text" required>
-                <button class="btn-pesquisar" id="btn-pesquisar">Pesquisar</button>
+                <button class="btn-pesquisar" id="btn-pesquisar-vendas">Pesquisar</button>
             </div>
             <table class="tabela-relatorio">
                 <thead>
