@@ -48,3 +48,7 @@ footer p, footer a {
     gap: 5px;
     margin: 1rem 1rem;
 }
+
+.ajusta-display {
+    grid-column: 1 / -1;
+}

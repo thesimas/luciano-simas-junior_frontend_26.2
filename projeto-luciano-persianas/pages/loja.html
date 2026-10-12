@@ -31,7 +31,20 @@
     <main class="loja-display-grid">
         <section>
             <h2>Galeria de Produtos</h2>
-            <div class="coluna-produtos">
+            <div class="ajusta-display">
+                <div class="filtro">
+                    <img src="../assets/images/lupa.png" alt="Imagem de uma lupa" class="logo-lupa">
+                    <label for="seletor">Selecione um método de busca: </label>
+                    <select name="seletor" id="seletor">
+                        <option value="preco">Preço</option>
+                        <option value="categoria">Categoria</option>
+                        <option value="ordenacao">Ordenação</option>
+                    </select>
+                    <input type="text" required>
+                    <button class="btn-pesquisar" id="btn-pesquisar">Pesquisar</button>
+                </div>
+            </div>
+            <div class="galeria-produtos">
                 <article class="cartao-produto">
                     <h3>Persiana Vertical</h3>
                     <figure>
