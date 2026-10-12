@@ -51,8 +51,8 @@
 .info-contato {
     margin: auto;
     font-size: medium;
-    padding: 37px;
-    background-color: rgb(247, 249, 250);
+    padding: 40px;
+    background-color: var(--cor-fundo-destaque);
     box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
     border-radius: 20px;
 }
@@ -60,7 +60,7 @@
 .info-contato-destaque{
     text-align: center;
     font-weight: bolder;
-    font-size: large;
+    font-size: larger;
     margin-top: 45px;
     color: var(--cor-texto-destaque);
 }
@@ -68,21 +68,6 @@
 .info-contato span {
     font-weight: bold;
     color: var(--cor-texto-destaque);
-}
-
-/* Estilização do Perfil - Formulario de Edição do perfil */
-.espaco-foto {
-    margin: 5px auto;
-}
-
-.foto-perfil {
-    width: 100px;
-}
-
-.perfil-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 15px;
 }
 
 /* Formatação do Layout do conteudo principal de LOJA - produtos e carrinhos*/
