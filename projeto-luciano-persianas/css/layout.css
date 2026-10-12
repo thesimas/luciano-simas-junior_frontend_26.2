@@ -1,0 +1,54 @@
+@import url('base.css');
+
+/* Estilização do Navbar e footer */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--cor-navbar-footer);
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.logo-navbar {                        
+    width: 120px;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
+    border-radius: 70px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor-navbar-footer);
+}
+
+footer p, footer a {
+    text-decoration: none;
+    color: var(--cor-texto-secundario);
+}
+
+/* Estilização do MAIN de RELATORIO.html */
+.relatorio-display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 1rem 1rem; 
+    padding: 10px;
+}
+
+/* Estilização do MAIN de LOJA.html */
+.loja-display-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    margin: 1rem 1rem;
+}
+
+.ajusta-display {
+    grid-column: 1 / -1;
+}

@@ -1,0 +1,44 @@
+@import url('base.css');
+
+/* Estilização dos Cards */
+.galeria-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cartao-produto {
+    border: 1px solid var(--cor-borda-card);
+    background-color: var(--cor-fundo-cartao);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-produto {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    height: 200px;
+}
+
+.cartao-produto button {
+    background-color: var(--cor-card-btn);
+    color: var(--cor-texto-claro);
+    font-size: medium;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cartao-produto button:hover {
+    background-color: var(--cor-card-btn-hover);
+}

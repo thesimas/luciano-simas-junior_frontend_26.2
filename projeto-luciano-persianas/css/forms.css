@@ -1,0 +1,86 @@
+@import url('base.css');
+
+/* Estilização de Formulario */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo-suave);
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
+    border: 1px solid var(--cor-borda-tabela);
+    gap: 3px;
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+    background-color: var(--cor-fundo-suave);
+    border-radius: 5px;
+    color: var(--cor-texto-escuro);
+    padding: 5px;
+    font-weight: bold;
+}
+
+fieldset label, legend {
+    font-weight: bold;
+    font-style: italic;
+}
+
+fieldset input, textarea{
+    text-align: left;
+    padding: 5px;
+    border: 2px solid var(--cor-borda-form);
+    border-radius: 5px;
+    max-height: max-content;
+}
+
+fieldset button {
+    padding: 10px;
+    border: none;
+    background-color: var(--cor-btn-sucesso);
+    color: var(--cor-texto-claro);
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+fieldset button:hover {
+    background-color: var(--cor-btn-sucesso-hover);
+}
+
+/* Estilização das Mensagens abaixo do forms de cadastro e login*/
+
+.login {
+    margin: auto;
+    width: 50%;
+}
+
+.cadastro {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.cadastro-logar {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    width: 50%;
+}
+
+/* Ajuste na altura do form do login */
+
+.form-login {
+    margin-top: 100px;
+}
+
+
+/* Estilização do FORMS no index */
+.form-contato {
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
+    gap: 5px;
+    margin:  0 auto;
+    border-radius: 20px;
+    width: 90%;
+    border: 5x solid black; 
+}
