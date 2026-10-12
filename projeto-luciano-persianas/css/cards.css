@@ -6,7 +6,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
 }
 
 .cartao-produto {
@@ -31,6 +31,8 @@
 .cartao-produto button {
     background-color: var(--cor-card-btn);
     color: var(--cor-texto-claro);
+    width: 100%;
+    margin: 0 auto;
     font-size: medium;
     border: none;
     padding: 15px;
