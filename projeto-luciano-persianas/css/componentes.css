@@ -165,3 +165,25 @@
 .btn-pesquisar:hover{
     background-color: darkgreen;
 }
+
+/* Estilização da mensagem de compra finalizada da LOJA */
+.mensagem-sucesso {
+    background-color: var(--cor-btn-sucesso);
+    color: var(--cor-texto-claro);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
+    border: 2px solid var(--cor-btn-sucesso-hover);
+}
+
+.mensagem-sucesso h3 {
+    color: var(--cor-texto-destaque);
+    margin: auto;
+}
+
+.mensagem-sucesso p {
+    margin: 5px 0;
+    font-size: 1.05rem;
+}
