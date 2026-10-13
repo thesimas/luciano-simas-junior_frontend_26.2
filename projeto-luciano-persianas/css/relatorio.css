@@ -1,0 +1,124 @@
+@media print {
+  
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+  }
+
+  html,
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    min-height: 0;
+  }
+
+  html body h1, html body h2, html body h3 {
+    color: black;
+  }
+
+  .navbar {
+    display: block;
+    height: auto;
+    padding: 0 0 8px 0;
+    background: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+
+  .navbar h1 {
+    margin: 0;
+    font-size: 18pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  header::after {
+    content: "Relatório emitido em 12/10/2026 às 18:30 - Luciano Persianas";
+    display: block;
+    margin: 6px 0 14px 0;
+    font-size: 9pt;
+    text-align: center;
+    color: #333;
+  }
+
+  .nav-links, .menu-toggle, .menu-hamburguer, .filtro, .logo-lupa, button, select, input {
+    display: none !important;
+  }
+
+  .relatorio-display-grid {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .relatorio-display-grid > section {
+    margin-bottom: 20px;
+  }
+
+  html body h2 {
+    margin: 0 0 8px 0;
+    padding: 0;
+    font-size: 14pt;
+    text-align: left;
+    border-bottom: 1px solid black;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  table, .tabela-relatorio {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: none;
+    font-size: 10pt;
+  }
+
+  .tabela-relatorio th,
+  .tabela-relatorio td {
+    padding: 5px 8px;
+    border: 1px solid #555;
+    background: white !important;
+    border-radius: 0;
+    text-align: left;
+    color: black;
+  }
+
+  .tabela-relatorio th {
+    background: gray !important;
+    font-weight: bold;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  footer {
+    margin-top: 20px;
+    padding-top: 8px;
+    border-top: 1px solid black;
+    background: none;
+    font-size: 9pt;
+    text-align: center;
+  }
+
+  footer p, footer a {
+    margin: 2px 0;
+    font-size: inherit;
+    color: black;
+  }
+
+  html body a {
+    color: black;
+    text-decoration: none;
+  }
+}
