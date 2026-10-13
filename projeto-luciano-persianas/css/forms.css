@@ -18,6 +18,7 @@ fieldset {
 
 fieldset legend {
     text-align: center;
+    margin: 0 auto;
     background-color: var(--cor-fundo-suave);
     border-radius: 5px;
     color: var(--cor-texto-escuro);
@@ -107,5 +108,5 @@ fieldset button:hover {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 10px;
-    align-items: start; /* Impede que o formulário estique a tabela ao lado */
+    align-items: start;
 }

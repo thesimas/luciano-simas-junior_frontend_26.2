@@ -22,14 +22,17 @@
 .texto-descricao {
     font-size: large;
     margin: 1rem auto;
-    padding: 15px;
+    padding: 10px;
     background-color: var(--cor-fundo-destaque);
     border-radius: 50px;
     box-shadow: 1px 1px 5px 1px var(--cor-box-shaddow);
+    width: 75%;
 }
 
 .texto-descricao p{
-    letter-spacing: 0.7px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 
 .texto-descricao p em {
